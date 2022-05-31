@@ -27,6 +27,11 @@ const NavbarLinks = () => {
          title: "Login",
          to: "login",
       },
+{
+   title:"ShoppingCart",
+   to:"ShoppingCart"
+
+}
    ];
    return (
       <div>

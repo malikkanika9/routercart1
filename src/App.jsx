@@ -14,6 +14,7 @@ import Contact from "./components/Contact";
 import Login from "./components/Login";
 import ProductDetails from "./components/ProductDetails";
 import PrivateComponent from "./components/PrivateComponent";
+import { ShoppingCart } from "./components/ShoppingCart";
 
 function App() {
    return (
@@ -36,6 +37,14 @@ function App() {
                   element={
                      <PrivateComponent>
                         <ProductDetails />
+                     </PrivateComponent>
+                  }
+               ></Route>
+               <Route
+                  path="/ShoppingCart"
+                  element={
+                     <PrivateComponent>
+                        <ShoppingCart />
                      </PrivateComponent>
                   }
                ></Route>
