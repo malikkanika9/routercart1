@@ -8,9 +8,7 @@ const ProductDetails = () => {
    const { id } = useParams();
    const [data, setData] = useState({});
    const { isAuth } = useContext(AuthContext);
-   const [prod,setProd]=useState([])
-
-   const fetchData = async () => {
+     const fetchData = async () => {
       let fetched = await fetch(`http://localhost:8080/store/${id}`);
       fetched = await fetched.json();
       setData({ ...fetched });
